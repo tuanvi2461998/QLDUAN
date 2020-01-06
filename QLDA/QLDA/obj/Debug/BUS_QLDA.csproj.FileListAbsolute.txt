@@ -1,0 +1,2 @@
+F:\QUANLY_DUAN_XAYDUNG\QLDA\QLDA\obj\Debug\BUS_QLDA.csprojAssemblyReference.cache
+F:\QUANLY_DUAN_XAYDUNG\QLDA\QLDA\obj\Debug\BUS_QLDA.csproj.CoreCompileInputs.cache

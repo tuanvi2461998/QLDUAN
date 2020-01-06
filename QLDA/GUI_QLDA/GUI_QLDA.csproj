@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A53E474C-E2A8-44DC-A64E-5CF706CE66AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI_QLDA</RootNamespace>
+    <AssemblyName>GUI_QLDA</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.1" />
+    <Reference Include="DevExpress.Data.v19.1" />
+    <Reference Include="DevExpress.Utils.v19.1" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v19.1" />
+    <Reference Include="DevExpress.Printing.v19.1.Core" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI_CONGTRINH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_CONGTRINH.Designer.cs">
+      <DependentUpon>GUI_CONGTRINH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NHANVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_NHANVIEN.Designer.cs">
+      <DependentUpon>GUI_NHANVIEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NHA_THAU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_NHA_THAU.Designer.cs">
+      <DependentUpon>GUI_NHA_THAU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_RUI_RO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_RUI_RO.Designer.cs">
+      <DependentUpon>GUI_RUI_RO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI_CONGTRINH.resx">
+      <DependentUpon>GUI_CONGTRINH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NHANVIEN.resx">
+      <DependentUpon>GUI_NHANVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NHA_THAU.resx">
+      <DependentUpon>GUI_NHA_THAU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_RUI_RO.resx">
+      <DependentUpon>GUI_RUI_RO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_TEST\BUS_TEST.csproj">
+      <Project>{396c4b26-1503-4602-b685-4dad822e472a}</Project>
+      <Name>BUS_TEST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BUS_TT\BUS_TT.csproj">
+      <Project>{60d2c887-3d57-4001-a71f-cee7daf687ab}</Project>
+      <Name>BUS_TT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QLDA\DTO_QLDA.csproj">
+      <Project>{7f02bf4c-21ce-474f-9cab-7603445e57a6}</Project>
+      <Name>DTO_QLDA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
